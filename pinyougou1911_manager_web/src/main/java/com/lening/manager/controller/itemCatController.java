@@ -26,6 +26,7 @@ public class itemCatController {
             itemCatService.deleteByIds(ids);
             return new Result(true, "删除成功");
         } catch (Exception e) {
+            System.out.println("hjfjfh");
             return new Result(false, "删除失败");
         }
     }
